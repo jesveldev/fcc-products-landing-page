@@ -13,6 +13,7 @@ html{
 body{
 	font-family: Lato, sans-serif;
 	padding-top:5.5%;
+	margin:0;
 }
 
 /*----------------------------------------
@@ -159,3 +160,96 @@ body{
 ----------------------------------------
 ----------------------------------------*/
 
+#products{
+	margin-top:5%;
+	width:100%;
+	text-align:center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items:center;
+	margin-bottom: 2%;
+}
+
+.product-card{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items:center;
+	border: 1px solid black;
+	width:23%;
+	margin:0 1%;
+}
+
+.product-card h3{
+	width:100%;
+	background-color: #ddd;
+	padding:4% 0;
+}
+
+.product-card h4{
+	font-size:1.5em;
+
+}
+
+.product-card p, .product-card h4{
+	margin-top:5%;
+}
+
+.buy-button-container{
+	width:100%;
+	text-align:center;
+	margin: 6.5% 0;
+}
+
+.buy-button{
+	background-color: var(--main-yellow);
+	border:none;
+	font-size:1em;
+	padding:3.5% 6%;
+	cursor:pointer;
+}
+
+.buy-button:hover{
+	transition: 0.3s ease-out;
+	background-color: orange;
+}
+
+/*----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------*/
+
+#page-footer{
+	width:1054px;
+	margin: 0 auto;
+	background-color:#ddd;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items:end;
+	padding:1.2% 0;
+}
+
+#footer-links{
+	width:25%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items:center
+}
+
+#footer-links a {
+	color:black;
+	text-decoration: none;
+	margin-bottom:2.5%;
+}
+
+#footer-links a, #copyright-label{
+	margin-right:2%;
+}
+
+#copyright-label{
+	color:rgba(0,0,0,0.67);
+}
