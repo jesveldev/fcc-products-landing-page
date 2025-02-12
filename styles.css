@@ -277,7 +277,7 @@ body{
 	}
 
 	#header-img{
-		width:50%;
+		width:45%;
 	}
 
 	#nav-bar{
@@ -288,9 +288,14 @@ body{
 	}
 
 	#newsletter-email{
+		text-align:center;
 		margin-top:15%;
 	}
-	
+
+	#features{
+		width:100%;
+	}
+
 	#products{
 		flex-flow:column nowrap;
 	}
@@ -301,7 +306,7 @@ body{
 	}
 
 	#page-footer{
-		width:80%;
+		width:70%;
 		justify-content: center;
 		align-items: center;
 		text-align:center;
@@ -315,5 +320,28 @@ body{
 	#footer-links a{
 		margin: 0 20%;
 		font-size:1.1em;
+	}
+}
+
+@media screen and (max-width:544px){
+	#header-img{
+		width:65%;
+	}
+	#newsletter-email{
+		margin-top:25%;
+	}
+}
+
+@media screen and (max-width:340px){
+	#header-img{
+		width:100%;
+	}
+
+	#newsletter-email{
+		margin-top:35%;
+	}
+
+	#video-container{
+		width:80%;
 	}
 }
