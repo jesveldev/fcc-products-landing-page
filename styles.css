@@ -106,7 +106,7 @@ body{
 ----------------------------------------
 ----------------------------------------*/
 
-#features, #video{
+#features, #video-container{
 	width:65%;
 	margin:0 auto;
 }
@@ -147,7 +147,7 @@ body{
 ----------------------------------------
 ----------------------------------------*/
 
-#video{
+#video-container{
 	margin-top:4%;
 	display: flex;
 	justify-content: center;
@@ -252,4 +252,63 @@ body{
 
 #copyright-label{
 	color:rgba(0,0,0,0.67);
+}
+
+/*----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------*/
+
+#page-footer p a{
+	color:black;
+}
+
+#page-footer:last-child{
+	border-top:3px solid rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width:767px){
+
+	#header{
+		flex-flow:column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#header-img{
+		width:50%;
+	}
+
+	#nav-bar{
+		width:100%;
+		justify-content: space-evenly;
+		font-size:1.35em;
+		margin: 1% 0;
+	}
+	#products{
+		flex-flow:column nowrap;
+	}
+
+	.product-card{
+		width:50%;
+		margin-bottom:2%;
+	}
+
+	#page-footer{
+		width:80%;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+	}
+
+	#footer-links{
+		justify-content: center;
+		align-items: center;
+	}
+
+	#footer-links a{
+		margin: 0 20%;
+		font-size:1.1em;
+	}
 }
